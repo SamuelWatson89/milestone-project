@@ -22,7 +22,7 @@ PTME will allow:
 
 As mentioned above, PTME will be designed to be used by anyone, on any device, at any time. Allowing quick and easy creation of a PT profile, and quick presice search for a specific trainer.
 
-[Wireframe Mockup of PTME Landing page](/assets/ptme-wireframe.png)
+[Wireframe Mockup of PTME Landing page](assets/ptme-wireframe.png)
 
 ## Features ##
 
