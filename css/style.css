@@ -1,0 +1,17 @@
+body,
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.front-page {
+    height: 70vh;
+    background-image: url('../img/ivan-torres.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.front-page .jumbotron {
+    margin-top: 10%;
+    background-color: transparent;
+    color: #fff;
+}
