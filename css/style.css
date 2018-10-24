@@ -3,15 +3,146 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+.navbar {
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 0;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+
+/* Menu Icon */
+
+.navbar-default .navbar-toggle {
+    border: 0;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
+.navbar .navbar-nav li a {
+    color: #fafafa;
+    height: 60px;
+    line-height: 30px;
+}
+
+.navbar .navbar-nav li a:hover {
+    color: #C14242;
+}
+
+.navbar .navbar-brand {
+    font-size: 2em;
+    font-weight: 900;
+    color: #fafafa;
+    height: 60px;
+    line-height: 30px;
+}
+
+.navbar .navbar-brand span {
+    font-weight: 900;
+    color: #C14242;
+}
+
+.navbar .navbar-brand:hover {
+    color: #fafafa;
+}
+
+.navbar-default .navbar-nav a {
+    font-weight: bold;
+    height: 60px;
+    line-height: 30px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background: #C14242;
+    color: #fafafa;
+    border-radius: 4px;
+}
+
+input[type=search] {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.btn-search {
+    background-color: #C14242;
+}
+
+
+.btn-register {
+    background-color: #C14242;
+}
+
 .front-page {
     height: 70vh;
     background-image: url('../img/ivan-torres.png');
-    background-position: center;
+    background-position: center top;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .front-page .jumbotron {
     margin-top: 10%;
     background-color: transparent;
-    color: #fff;
+    color: #fafafa;
+}
+
+.jumbotron h3 {
+    margin: 50px 0;
+}
+
+.featured-trainer {}
+
+
+.trainer-header {
+    margin: 15px 0;
+}
+
+.about {
+    background-color: #C14242;
+    color: #fafafa;
+}
+
+footer {
+    background-color: #232323;
+    color: #fafafa;
+}
+
+
+@media (max-width: @screen-md-max) {
+    .front-page {
+        height: 85vh;
+    }
+
+    .jumbotron h3 {
+        margin: 25px 0;
+    }
 }

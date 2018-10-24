@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/style.css" type="text/css" />
 
     <title>PTME - Kick Start Your Fitness Goals</title>
@@ -16,34 +17,35 @@
 
 <body>
 
-    <header class="contianer-fluid front-page">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">PTME</a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Search</a></li>
-                        <li><a href="#">Browse Trainers</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" class="btn btn-danger">Sign In</a></li>
-                        <li><a href="#" class="btn btn-success">Register</a></li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><span>PT</span>ME</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-        </nav>
+
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class=" nav navbar-nav navbar-right hidden-xs">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#"><button type="button" class="btn btn-register">Register</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="contianer-wrapper front-page">
         <div class="container">
             <div class="jumbotron text-center">
                 <div class="row">
@@ -53,211 +55,221 @@
 
                 <div class="row">
                     <div class="col-sm-12 col-md-8 col-md-offset-2">
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Go!</button>
-                            </span>
-                            <input type="text" class="form-control" placeholder="Search for...">
+                        <form>
+                            <div class="form-group">
+                                <label for="search" class="sr-only">Search For Trainer</label>
+                                <input type="search" class="form-control" id="search" placeholder="Search">
+                                <button type="submit" class="btn btn-lg btn-block btn-search">Search</button>
+                        </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
 
-    <main class="container">
-        <section class="featured-trainer">
-            <div class="row">
-                <h2 class="text-center">Featured trainers</h2>
-            </div>
+    <main class="container-fluid">
+        <section class="row featured-trainer">
+            <div class="container">
+                <div class="row trainer-header">
+                    <h2 class="text-center">Featured trainers</h2>
+                </div>
 
-            <div class="row">
-                <div class="col-xs-6 col-sm-4 col-md-3 text-center">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Trainer Name</h3>
-                        </div>
-                        <div class="panel-body">
-                            <img src="https://picsum.photos/150" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Trainer Name</h3>
                             </div>
-                            <button class="btn btn-danger">View Trainer</button>
+                            <div class="panel-body">
+                                <img src="https://picsum.photos/150" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div>
+                                    <span class="sr-only">Five Stars</span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </div>
+                                <button class="btn btn-danger">View Trainer</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 text-center">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Trainer Name</h3>
-                        </div>
-                        <div class="panel-body">
-                            <img src="https://picsum.photos/150" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
+                    <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Trainer Name</h3>
                             </div>
-                            <button class="btn btn-danger">View Trainer</button>
+                            <div class="panel-body">
+                                <img src="https://picsum.photos/150" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div>
+                                    <span class="sr-only">Five Stars</span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                </div>
+                                <button class="btn btn-danger">View Trainer</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 text-center">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Trainer Name</h3>
-                        </div>
-                        <div class="panel-body">
-                            <img src="https://picsum.photos/150" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
+                    <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Trainer Name</h3>
                             </div>
-                            <button class="btn btn-danger">View Trainer</button>
+                            <div class="panel-body">
+                                <img src="https://picsum.photos/150" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div>
+                                    <span class="sr-only">Five Stars</span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                </div>
+                                <button class="btn btn-danger">View Trainer</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 text-center">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Trainer Name</h3>
-                        </div>
-                        <div class="panel-body">
-                            <img src="https://picsum.photos/150" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
+                    <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Trainer Name</h3>
                             </div>
-                            <button class="btn btn-danger">View Trainer</button>
+                            <div class="panel-body">
+                                <img src="https://picsum.photos/150" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div>
+                                    <span class="sr-only">Five Stars</span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                </div>
+                                <button class="btn btn-danger">View Trainer</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="about">
-            <div class="row">
-                <h2 class="text-center">How Can PTME Help you?</h2>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#">
-                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Media heading</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec mauris et ligula interdum ultricies vitae posuere libero. Vestibulum id.</p>
-                        </div>
-                    </div>
+        <section class="container-fluid about">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">How Can PTME Help you?</h2>
                 </div>
 
-                <div class="col-xs-12 col-md-6">
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
                               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                             </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Media heading</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec mauris et ligula interdum ultricies vitae posuere libero. Vestibulum id.</p>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec mauris et ligula interdum ultricies vitae posuere libero. Vestibulum id.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-xs-12 col-md-6">
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
                               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                             </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Media heading</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec mauris et ligula interdum ultricies vitae posuere libero. Vestibulum id.</p>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec mauris et ligula interdum ultricies vitae posuere libero. Vestibulum id.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-xs-12 col-md-6">
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
                               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                             </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec mauris et ligula interdum ultricies vitae posuere libero. Vestibulum id.</p>
+                            </div>
                         </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Media heading</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec mauris et ligula interdum ultricies vitae posuere libero. Vestibulum id.</p>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec mauris et ligula interdum ultricies vitae posuere libero. Vestibulum id.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="store">
+        <section class="container store">
             <div class="row">
-                <h2 class="text-center">Reach Your Goals, With Our Merch</h2>
-            </div>
+                <div class="row">
+                    <h2 class="text-center">Reach Your Goals, With Our Merch</h2>
+                </div>
 
-            <div class="col-xs-12 col-md-6">
-                <div class="media">
-                    <div class="media-left">
-                        <a href="#">
+                <div class="col-xs-12 col-md-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
                               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                             </a>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Media heading</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec mauris et ligula interdum ultricies vitae posuere libero. Vestibulum id.</p>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Media heading</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec mauris et ligula interdum ultricies vitae posuere libero. Vestibulum id.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-xs-12 col-md-6">
-                <div class="media">
-                    <div class="media-left">
-                        <a href="#">
+                <div class="col-xs-12 col-md-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
                               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                             </a>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Media heading</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec mauris et ligula interdum ultricies vitae posuere libero. Vestibulum id.</p>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Media heading</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec mauris et ligula interdum ultricies vitae posuere libero. Vestibulum id.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-xs-12 col-md-6">
-                <div class="media">
-                    <div class="media-left">
-                        <a href="#">
+                <div class="col-xs-12 col-md-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
                               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                             </a>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Media heading</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec mauris et ligula interdum ultricies vitae posuere libero. Vestibulum id.</p>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Media heading</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec mauris et ligula interdum ultricies vitae posuere libero. Vestibulum id.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -265,7 +277,7 @@
     </main>
 
     <footer class="container-fluid">
-        <div class="row">
+        <div class="container">
             <div class="col-xs-12 col-md-3">
                 <h4>footer heading</h4>
                 <ul class="nav nav-pills nav-stacked">
@@ -291,6 +303,7 @@
                 <i class="fa fa-twitter"></i>
                 <i class="fa fa-pinterest"></i>
             </div>
+        </div>
         </div>
     </footer>
 
