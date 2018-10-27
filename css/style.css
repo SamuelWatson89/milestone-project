@@ -1,6 +1,8 @@
 body,
 html {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -90,6 +92,7 @@ html {
 input[type=search] {
     height: 50px;
     margin-bottom: 15px;
+    font-size: 2em;
 }
 
 .btn-search {
@@ -119,30 +122,96 @@ input[type=search] {
     margin: 50px 0;
 }
 
-.featured-trainer {}
+/* Featured Trainer Section */
+.featured-trainer {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
 
 
 .trainer-header {
-    margin: 15px 0;
+    margin-bottom: 25px;
 }
 
+.trainer-header h2 {
+    font-size: 3em;
+}
+
+.panel {
+    transition: transform .3s ease;
+}
+
+.panel:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.11)
+}
+
+.panel-default .panel-heading {
+    background-color: #C14242;
+    color: #FFF;
+}
+
+.panel .list-group {
+    margin-bottom: 5px;
+}
+
+.panel .list-group-item {
+    border: none;
+    width: 150px;
+    margin: auto;
+}
+
+.rating {
+    margin: 5px 0px;
+    color: gold;
+    font-size: 1.5em;
+}
+
+.panel .btn-primary {
+    background-color: #C14242;
+}
+
+.panel img {
+    margin-bottom: 5px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.panel p {
+    margin: 10px 0;
+}
+
+ /* About section */
+ 
 .about {
+    height: 50vh;
     background-color: #C14242;
     color: #fafafa;
+    padding: 0;
 }
 
+/* Store section */
+.store { 
+    height: 50vh;
+}
+
+/* Footer section */
 footer {
     background-color: #232323;
     color: #fafafa;
 }
 
 
-@media (max-width: @screen-md-max) {
+@media (max-width: 768px) {
     .front-page {
         height: 85vh;
     }
 
     .jumbotron h3 {
         margin: 25px 0;
+    }
+    .navbar {
+        background-color: rgba(35, 35, 35, .75)
     }
 }
