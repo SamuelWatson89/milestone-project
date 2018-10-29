@@ -3,6 +3,7 @@ html {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #FAFAFA;
 }
 
 h2 {
@@ -37,19 +38,19 @@ h2 {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
+    background-color: #fafafa;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
-    color: white;
+    color: #fafafa;
     background: transparent;
 }
 
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
-    color: white;
+    color: #fafafa;
 }
 
 .navbar .navbar-nav li a {
@@ -101,11 +102,26 @@ input[type=search] {
 
 .btn-search {
     background-color: #C14242;
+    transition: all .3s ease;
 }
 
+.btn-search:hover {
+    color: #FAFAFA;
+    background-color: #A22424;
+}
 
 .btn-register {
     background-color: #C14242;
+    transition: all .3s ease;
+}
+
+.btn-register:hover {
+    background-color: #A22424;
+    color: #FAFAFA;
+}
+
+.btn-register a:hover {
+    color: #FAFAFA;
 }
 
 .front-page {
@@ -136,9 +152,10 @@ input[type=search] {
 
 .trainer-header {
     margin-bottom: 25px;
+    transition: all .3s ease;
 }
 
-.trainer-section{
+.trainer-section {
     margin-top: 30px;
 }
 
@@ -147,7 +164,7 @@ a.panel-link {
 }
 
 .panel {
-    transition: transform .3s ease;
+    transition: all .3s ease;
 }
 
 .panel:hover {
@@ -159,6 +176,11 @@ a.panel-link {
 .panel-default .panel-heading {
     background-color: #C14242;
     color: #FFF;
+    transition: all .3s ease;
+}
+
+.panel:hover .panel-heading {
+    background-color: #E77070;
 }
 
 .panel .list-group {
@@ -258,7 +280,7 @@ footer {
 
 footer h4 {
     text-transform: capitalize
-} 
+}
 
 @media (max-width: 768px) {
     .front-page {
