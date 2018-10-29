@@ -5,6 +5,10 @@ html {
     padding: 0;
 }
 
+h2 {
+    font-size: 3em;
+}
+
 .navbar {
     margin-bottom: 0;
     position: absolute;
@@ -36,15 +40,15 @@ html {
     background-color: white;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
     color: white;
     background: transparent;
 }
 
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
     color: white;
 }
 
@@ -81,9 +85,9 @@ html {
     line-height: 30px;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
     background: #C14242;
     color: #fafafa;
     border-radius: 4px;
@@ -130,13 +134,16 @@ input[type=search] {
     margin-bottom: 50px;
 }
 
-
 .trainer-header {
     margin-bottom: 25px;
 }
 
-.trainer-header h2 {
-    font-size: 3em;
+.trainer-section{
+    margin-top: 30px;
+}
+
+a.panel-link {
+    text-decoration: none;
 }
 
 .panel {
@@ -162,16 +169,14 @@ input[type=search] {
     border: none;
     width: 150px;
     margin: auto;
+    color: #555;
+    font-weight: 600;
 }
 
 .rating {
     margin: 5px 0px;
     color: gold;
     font-size: 1.5em;
-}
-
-.panel .btn-primary {
-    background-color: #C14242;
 }
 
 .panel img {
@@ -193,7 +198,9 @@ input[type=search] {
     padding: 0;
 }
 
-.about {margin-bottom: 30px}
+.about {
+    margin-bottom: 30px
+}
 
 .about-header {
     margin-top: 25px;
@@ -219,13 +226,39 @@ input[type=search] {
     min-height: 50vh;
 }
 
+.store-header {
+    margin-top: 25px;
+}
+
+.store-body {
+    margin-bottom: 50px;
+}
+
+.store-body .media {
+    margin-top: 40px;
+    background-color: #fafafa;
+    padding: 10px;
+    box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.11)
+}
+
+.store-body .media-left span {
+    max-height: 150px;
+    max-width: 150px;
+    font-size: 6em;
+    text-align: center;
+}
+
 /* Footer section */
 
 footer {
     background-color: #232323;
     color: #fafafa;
+    padding-top: 15px
 }
 
+footer h4 {
+    text-transform: capitalize
+} 
 
 @media (max-width: 768px) {
     .front-page {
@@ -235,6 +268,7 @@ footer {
     .jumbotron h3 {
         margin: 25px 0;
     }
+
     .navbar {
         background-color: rgba(35, 35, 35, .75)
     }
