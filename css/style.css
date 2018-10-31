@@ -220,16 +220,13 @@ a.panel-link {
     padding: 0;
 }
 
-.about {
-    margin-bottom: 30px
-}
-
 .about-header {
     margin-top: 25px;
 }
 
 .about-body {
     margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 .about-body .media {
@@ -260,10 +257,11 @@ a.panel-link {
     margin-top: 40px;
     background-color: #fafafa;
     padding: 10px;
+    border: 1px solid #efefef;
     box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.11)
 }
 
-.store-body .media-left span {
+.store-body .media span {
     max-height: 150px;
     max-width: 150px;
     font-size: 6em;
