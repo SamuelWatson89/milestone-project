@@ -32,7 +32,8 @@ As mentioned above, PTME will be designed to be used by anyone, on any device, a
 
 #### Features to impliment ###
 
-* Messging system
+* Messaging system
+* Session avaliabilty calender
 * Training plan creater
 * Meal prep planner
 * Rating system
