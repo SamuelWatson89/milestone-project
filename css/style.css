@@ -97,7 +97,7 @@ h2 {
 input[type=search] {
     height: 50px;
     margin-bottom: 15px;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .btn-search {
@@ -170,6 +170,7 @@ a.panel-link {
 .panel:hover {
     transform: scale(1.05);
     -webkit-box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.11);
     box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.11)
 }
 
@@ -203,7 +204,6 @@ a.panel-link {
 
 .panel img {
     margin-bottom: 5px;
-    -webkit-border-radius: 4px;
     border-radius: 4px;
 }
 
@@ -239,14 +239,37 @@ a.panel-link {
     margin-bottom: 15px;
 }
 
+.mail {
+    margin: 50px 0;
+}
+
+input[type=email] {
+    height: 50px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.btn-join {
+    background-color: #C14242;
+    transition: all .3s ease;
+    color: #FAFAFA;
+}
+
+.btn-join:hover {
+    color: #FFF;
+    background-color: #A22424;
+}
+
 /* Store section */
 
 .store {
     min-height: 50vh;
+    background-color: #C14242;
 }
 
 .store-header {
     margin-top: 25px;
+    color: #FAFAFA;
 }
 
 .store-body {
@@ -258,6 +281,8 @@ a.panel-link {
     background-color: #fafafa;
     padding: 10px;
     border: 1px solid #efefef;
+    -webkit-box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.11);
     box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.11)
 }
 
@@ -277,7 +302,12 @@ footer {
 }
 
 footer h4 {
-    text-transform: capitalize
+    text-transform: capitalize;
+}
+
+footer .nav-stacked a {
+    color: #C14242;
+    font-size: 1.15em;
 }
 
 @media (max-width: 768px) {
