@@ -36,10 +36,6 @@
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <ul class=" nav navbar-nav navbar-right hidden-xs">
-                    <li><a href="#">Sign In</a></li>
-                    <li><button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">Register</button></li>
-                </ul>
             </div>
         </div>
     </nav>
@@ -50,7 +46,7 @@
             <div class="jumbotron text-center">
                 <div class="row">
                     <h1>Kickstart Your Fitness Goals</h1>
-                    <h3>Find Your Perfect Fittness Professional</h3>
+                    <h2>Find Your Perfect Fittness Professional</h2>
                 </div>
 
                 <div class="row">
@@ -62,6 +58,10 @@
                                 <button type="submit" class="btn btn-lg btn-block btn-search">Search</button>
                             </div>
                         </form>
+                        <div class="row hidden-xs">
+                            <a href="#">Sign In</a>
+                            <button type="button" class="btn btn-register" data-toggle="modal" data-target="#register">Register</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -232,13 +232,13 @@
             </div>
         </section>
 
-        <section class="container-fluid mail hidden-xs">
-            <div class="container text-center">
+        <section class="container-fluid mail">
+            <div class="container mail-body text-center">
                 <div class="row">
                     <div class="col-xs-12 col-md-8 col-md-offset-2">
                         <div class="row">
                             <h2>Keep up to date</h2>
-                            <p>Join our mailing list for up to date trianer info, competitions and uodates.</p>
+                            <p>Join our mailing list for up to date trianer info, competitions and updates.</p>
                         </div>
                         <form>
                             <div class="form-group">
@@ -369,7 +369,7 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal fade" id="register" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">

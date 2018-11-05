@@ -41,15 +41,15 @@ h2 {
     background-color: #fafafa;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
     color: #fafafa;
     background: transparent;
 }
 
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
     color: #fafafa;
 }
 
@@ -86,9 +86,9 @@ h2 {
     line-height: 30px;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
     background: #C14242;
     color: #fafafa;
     border-radius: 4px;
@@ -102,11 +102,13 @@ input[type=search] {
 
 .btn-search {
     background-color: #C14242;
+    color: #FAFAFA;
+    font-weight: bold;
     transition: all .3s ease;
 }
 
 .btn-search:hover {
-    color: #FAFAFA;
+    color: #FFF;
     background-color: #A22424;
 }
 
@@ -125,27 +127,35 @@ input[type=search] {
 }
 
 .front-page {
-    min-height: 70vh;
-    background-image: url('../img/ivan-torres.png');
-    background-position: center top;
+    min-height: 100vh;
+    background-image: url('../img/ropes.jpg');
+    background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .front-page .jumbotron {
-    margin-top: 10%;
-    background-color: transparent;
-    color: #fafafa;
+    margin-top: 40%;
+    transform: translate(0%, -40%);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #232323;
+    border-radius: 10px;
 }
 
-.jumbotron h3 {
+.jumbotron h2 {
     margin: 50px 0;
+}
+
+.jumbotron a {
+    text-decoration: none;
+    color: #232323;
 }
 
 /* Featured Trainer Section */
 
 .featured-trainer {
-    min-height: 50vh;
+    min-height: 55vh;
     margin-top: 25px;
     margin-bottom: 50px;
 }
@@ -214,7 +224,7 @@ a.panel-link {
 /* About section */
 
 .about-bg {
-    min-height: 50vh;
+    min-height: 55vh;
     background-color: #C14242;
     color: #fafafa;
     padding: 0;
@@ -239,8 +249,19 @@ a.panel-link {
     margin-bottom: 15px;
 }
 
+/* Mail Section */
+
 .mail {
-    margin: 50px 0;
+    background-image: url('../img/sunset-runner.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.mail-body {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 input[type=email] {
@@ -263,13 +284,12 @@ input[type=email] {
 /* Store section */
 
 .store {
-    min-height: 50vh;
-    background-color: #C14242;
+    min-height: 55vh;
 }
 
 .store-header {
     margin-top: 25px;
-    color: #FAFAFA;
+    color: #232323;
 }
 
 .store-body {
@@ -312,7 +332,12 @@ footer .nav-stacked a {
 
 @media (max-width: 768px) {
     .front-page {
-        height: 85vh;
+        min-height: 50vh;
+    }
+
+    .front-page .jumbotron {
+        margin-top: 40%;
+        transform: translate(0, 0, );
     }
 
     .jumbotron h3 {
